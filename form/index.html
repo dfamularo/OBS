@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Join iQ Super Saver</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="css/date.css">
+<link rel="stylesheet" type="text/css" href="https://fast.fonts.com/cssapi/b0549848-32a3-4c8e-a13e-810394960364.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js " ></script>
+<script src="js/validator.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/numeric.js"></script>
+<script src="https://russellinvestments.com/-/media/files/au/assets/scripts/iframeResizercontentWindowmin.js"></script>
+
+ 
+<!--[if lt IE 9]>
+	  <script src="js/html5shiv.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->
+<script>
+			var iFrameResizer = {
+					messageCallback: function(message){
+						alert(message,parentIFrame.getId());
+					}
+				}
+</script>
+
+<style>
+body { font-family: "CompatilFactLTW01-Regul 721693", Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "CompatilFactLTW01-Regul 721693", Arial, sans-serif; font-weight: 100 !important; color: #333333; }
+h1 { font-size: 2em; }
+.container { max-width: 1000px; }
+h3 { font-size: 1.5em; }
+a { color: #66aadd; text-decoration: none; }
+p { color: #5c5c5c; }
+.numbers {color: #858585;}
+.total-value-error { color: #a94442 }
+.dropdown-toggle { position: relative; }
+.btn .caret { float: right; }
+.caret { border-top: 2px solid #a3a3a3; border-right: 0px solid transparent; border-left: 2px solid #a3a3a3; position: relative; height: 7px; width: 7px; transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transition: all 0.6s; margin-top: 3px; margin-left: 4px; vertical-align: middle; }
+.caret:before { content: ""; height: 7px; width: 7px; top: 2px; left: 2px; position: absolute; transition: all 0.6s; border-top: 2px solid #a3a3a3; border-right: 0px solid transparent; border-left: 2px solid #a3a3a3; transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); }
+@-moz-document url-prefix() {
+ .caret {
+ margin-top: -15px;
+}
+}
+.btn-group { width: 100%; }
+.active > a { border-top: 1px solid #dd6600 !important; }
+.nav-tabs { border-bottom: 1px solid #aaaaaa !important; }
+.nav-tabs-back li { background-color: #f5f5f5; width: 100px; z-index: -1; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-color: #aaa #aaa transparent; }
+.nav-tabs > li > a { border-radius: 4px 4px 0 0; }
+.btn { text-align: left; }
+.perc-box { width: 10%; }
+.adButtons { padding-left: 15px; padding-right: 15px; }
+.btn-standard { background-color: #66aadd; color: white; }
+.btn-standard:hover { background-color: #858585; color: #ffffff; }
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn { box-shadow: none; cursor: pointer; opacity: 1; }
+.disclaimer p { font-size: 11px; line-height: 1.4 !important; }
+.modal-header { border-bottom: 1px solid #fff; }
+#clone { width: auto !important; }
+.radio { display: inline-block; }
+.appear { display: none; }
+
+@media (max-width: 767px) {
+.disappear { display: none; }
+.appear { display: block; }
+#insurance {white-space: initial; height: 70px;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="container-fluid">
+    <br>
+    <br>
+    <h1 style="text-align: center;">JOIN IQ SUPER &ndash; SAVER<br> </h1>
+<!-- 	   <img src="img/BanneriQSuper_03_a.jpg" alt="BanneriQSuper_03_a" width="100%"> -->
+ 
+    
+    <h3 style="text-align:center">Exclusively for One Big Switch customers</h3>
+    <h3 style="text-align: center; font-size: 1.2em;">Please complete this form to open your iQ Super<sup>TM</sup> &ndash; Saver account in six simple steps.</h3>
+    <p style="text-align: center;">(Please complete all fields marked with *.)</p>
+    <hr>
+    <h3><span class="numbers">1.</span> Tell us about yourself</h3>
+    <br>
+    <form class="form-horizontal"  id="registration-form" data-toggle="validator" role="form" method="get" action="thankyou.html">
+      <div class="row">
+        <div class="col-md-2 ">
+          <p>TITLE*</p>
+          <div class="form-group">
+            <div class="btn-group btn-input clearfix col-sm-12 ">
+              <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" id="title" required> <span data-bind="label"></span>&nbsp; <span class="caret "></span> </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">MR</a></li>
+                <li><a href="#">MRS</a></li>
+                <li><a href="#">MS</a></li>
+                <li><a href="#">MISS</a></li>
+                <li><a href="#">DR</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 ">
+          <p>GIVEN NAMES*</p>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input class="form-control" id="inputName" name="firstname" type="text" required>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 ">
+          <p>SURNAME*</p>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input class="form-control" id="inputSurname" required>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 ">
+          <p>DATE OF BIRTH*</p>
+          <div class="form-group">
+            <div class="col-md-12" >
+              <input class="form-control" id="datepicker" type="text" required>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <p>GENDER*</p>
+          <div class="form-group">
+            <div class="col-md-12 radio">
+              <div class="btn-group" data-toggle="buttons">
+                <label >
+                  <input type="radio" id="male" name="quality[25]" value="1" required/>
+                  Male </label>
+                &nbsp;
+                <label>
+                  <input type="radio" id="female" name="quality[25]" value="2" required/>
+                  Female </label>
+              </div>
+              <!--btn group--> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h3><span class="numbers">2.</span> Your contact details</h3>
+      <br>
+      <div class="row">
+        <div class="col-md-6 ">
+          <p>ADDRESS*</p>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input class="form-control" id="inputAddress1" placeholder="LINE 1" required >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <p>ADDRESS LINE 2</p>
+          <div class="form-group"> 
+            <!--           <label for="inputPassword" class="col-md-4 control-label">OTHER</label> -->
+            <div class="col-md-12">
+              <input class="form-control" id="inputAddress2" placeholder="LINE 2">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <p>SUBURB*</p>
+          <div class="form-group"> 
+            <!--           <label for="inputPassword" class="col-md-4 control-label">OTHER</label> -->
+            <div class="col-md-12">
+              <input class="form-control" id="inputSuburb" required>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <p>STATE*</p>
+          <div class="form-group">
+            <div class="btn-group btn-input clearfix col-sm-12">
+              <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" id="state"> <span data-bind="label"></span>&nbsp;<span class="caret"></span> </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">NSW</a></li>
+                <li><a href="#">QLD</a></li>
+                <li><a href="#">VIC</a></li>
+                <li><a href="#">WA</a></li>
+                <li><a href="#">TAS</a></li>
+                <li><a href="#">NT</a></li>
+                <li><a href="#">SA</a></li>
+                <li><a href="#">ACT</a></li>
+                <li><a href="#">OTHER</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <p>POSTCODE*</p>
+          <div class="form-group"> 
+            <!--           <label for="inputEmail" class="col-md-4 control-label">TITLE*</label> -->
+            <div class="col-md-12">
+              <input class="form-control" id="inputPostcode" type="text" required>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <p>COUNTRY*</p>
+          <div class="form-group">
+            <div class="btn-group btn-input clearfix col-sm-12">
+              <input class="form-control" id="inputCountry"  type="text" required>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <p>EMAIL ADDRESS*</p>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input class="form-control" id="inputEmail"  type="email" required>
+            </div>
+          </div>
+        </div>
+		<div class="col-md-6">
+			<div class="form-group has-feedback">
+				<div class="col-md-12">
+				    <p>CONFIRM EMAIL ADDRESS*</p>
+				    <div class="input-group" style="width: 100% !important;">
+				      <input type="text"  class="form-control" id="inputEmail2"  type="email" style="border-radius: 3px !important;" data-match="#inputEmail" data-match-error="The email addresses you entered don’t match" required>
+				    </div>
+				    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				    <div class="help-block with-errors"></div>
+				</div>
+		  </div>        
+		</div>
+<!--
+  		<div class="col-md-6 ">
+          <p>CONFIRM EMAIL ADDRESS*</p>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input class="form-control" id="inputEmail2"  type="email" data-match="#inputEmail" data-match-error="The email addresses you entered don’t match" required>
+              
+            </div>
+          </div>
+        </div>
+-->
+        <div class="col-md-6">
+          <p>MOBILE CONTACT NUMBER*</p>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input class="form-control" id="inputMobile" type="text" required>
+            </div>
+          </div>
+        </div>
+<!--
+        <div class="col-md-4 ">
+          <p>WORK CONTACT NUMBER</p>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input class="form-control" id="inputWork">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <p>HOME CONTACT NUMBER</p>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input class="form-control" id="inputContact" >
+            </div>
+          </div>
+        </div>
+-->
+      </div>
+      <hr>
+      <h3><span class="numbers">3.</span> Tax File Number*</h3>
+      <div class="row">
+        <div class="col-md-12 ">
+          <div class="form-group">
+            <div class="col-md-12">
+              <input class="form-control" id="inputTax" type="text" required>
+              <br>
+              By providing my Tax File Number (TFN), I agree for it to be used as outlined in the
+              <span class="item">
+                <span class="subitem"><a href="javascript:void(0)">TFN Collection Statement</a></span>.
+              </span>
+              <div class="statusRollup" >
+                <p style="font-size: 12px;">Under the <i>Superannuation Industry (Supervision) Act 1993</i>, your superannuation fund is authorised to collect your TFN, which will only be used for lawful purposes.</p>
+                <p style="font-size: 12px;">These purposes may change in the future as a result of legislative changes. The Trustee of your superannuation fund may disclose your TFN to another superannuation provider, when your benefits are being transferred, unless you request in writing to the Trustee of your superannuation fund that your TFN not be disclosed to any other superannuation provider.</p>
+                <p style="font-size: 12px;">It is not an offence not to quote your TFN. However, giving your TFN to your superannuation fund will have the following advantages (which may not otherwise apply):</p>
+                <ul>
+                  <li>
+                    <p style="font-size: 12px;">Your superannuation fund will be able to accept all types of contributions to your account(s).</p>
+                  </li>
+                  <li>
+                    <p style="font-size: 12px;">Concessional contributions to your superannuation account(s) will generally be taxed at the concessional rate of 15%.</p>
+                  </li>
+                  <li>
+                    <p style="font-size: 12px;">Other than the tax that may ordinarily apply, no additional tax will be deducted when you start drawing down your superannuation benefits.</p>
+                  </li>
+                  <li>
+                    <p style="font-size: 12px;"> It will make it much easier to trace different superannuation accounts in your name, so that you receive all your superannuation benefits when you retire.</p>
+                  </li>
+                </ul>
+                <p style="font-size: 12px;">Your TFN will otherwise remain confidential. </p>
+              </div>
+              Can't find your TFN? Call the Australian Taxation Office (ATO) on 132 861. </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h3><span class="numbers">4.</span> Investment strategy*</h3>
+      <div class="row">
+        <div class="col-md-12 ">
+          <div class="form-group">
+            <div class="col-md-12">Choose your investment strategy from the diversified options below. Once you join, you can customise your investment strategy from the full menu of 15 options. For more details, please read the <a href="https://russellinvestments.com/-/media/files/au/resources/SS PDS IBR InvestmentGuide.pdf" target="_blank">iQ Super &ndash; Saver Investments Guide.</a><br>
+              <br>
+              <div id="home" class="tab-pane fade in active">
+                <div class="row">
+                  <div class="col-md-4 ">
+                    <div class="form-group">
+                      <div class="btn-group btn-input clearfix col-sm-12">
+	                      
+                        <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" id="simple-allocation" data-label-placement required> <span data-bind="label">Blended Balanced</span><span class="caret"></span> </button>
+                        <ul class="dropdown-menu" role="menu">
+	                
+                          <li><a href="#">Blended Balanced</a></li>
+                          <li><a href="#">High Growth</a></li>
+                          <li><a href="#">Growth</a></li>
+                          <li><a href="#">Balanced Opportunities</a></li>
+                          <li><a href="#">Diversified 50</a></li>
+                          <li><a href="#">Defensive</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--menu1--> 
+              
+              <!--tab content-->
+              <!--<div class="row">
+                <div class="col-md-12 "> <br>
+                  <b>Note:</b> You will be able to update your insurance preferences and change your investment strategy up to five times a year at no cost via your online account.
+<br>
+                  <br>
+                  <input type="checkbox" id="rebalance" value="rebalance_checkbox">
+                  &nbsp;Automatically rebalance to my future investment strategy.
+                  <span class="item">
+                    <span class="subitem-2"><a href="javascript:void(0)">What does this mean?</a></span>
+                  </span>
+                  <div class="statusRollup-2" >
+                    <p style="font-size: 12px;"> This means automatically switching investment units between the above options to realign your investment with the strategy you have chosen. This helps you to maintain the risk level that you’re most comfortable with and stay focused on your investment objectives. <br>
+                      <br>
+                      Automatic re-balancing will happen on the 15th day of each month, so you won’t be able to switch your investments for the three working days before this date.</p>
+                  </div>
+                </div>
+              </div>-->
+              <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                    </div>
+                    <div class="modal-body"> For more information or for any questions about iQ Super &ndash; Saver, please call us on 1800 555 667 (+61 2 9374 3916 from overseas) or email us at <a href="mailto:iq@russellinvestments.com.au">iq@russellinvestments.com.au</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h3><span class="numbers">5.</span> Insurance cover*</h3>
+      <div class="row">
+        <div class="col-md-12 ">
+          <div class="form-group">
+            <div class="col-md-12"> You can choose from three options:<br>
+              <br>
+              <div class="row">
+                <div class="col-md-8 col-md-12">
+                  <div class="form-group">
+                    <div class="btn-group btn-input clearfix col-sm-12">
+                      <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" id="insurance"> <span data-bind="label"></span>&nbsp;<span class="caret"></span> </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#" id="noInsurance">I don't need insurance cover.</a></li>
+                        <li><a href="#" id="groupLifeInsurance">I want insurance cover.</a></li>
+                        <li><a href="#" id="transferInsurance">I want to transfer an existing insurance cover to my iQ Super – Saver account.</a></li>
+                      </ul>
+                    </div>
+                    <div id="noInsuranceDetail" style="display: none; padding-left: 20px;"><p><br><br><br>While iQ Super – Saver doesn’t have any default insurance cover, you can always apply for Death, Total and Permanent Disablement (TPD) and/or Income Protection insurance cover later. </p></div>
+
+                 
+                   <div id="groupLifeInsuranceDetail" style="display: none; padding-left: 20px;"><p><br><br><br>You will need to go through our underwriting process with our insurer and we’ll be in touch with more information on this.</p></div>
+
+                  </div>
+				   <div id="transferInsuranceDetail" style="display: none; padding-left: 10px;"><p>We’ll contact you to find out more about your existing insurance cover.</p></div>
+				    
+                  </div>
+
+				  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <hr>
+      <h3><span class="numbers">6.</span> Consolidate your super*</h3>
+      <p>Send us on a search to find your other super and consolidate it all into your iQ Super – Saver account. Do make sure you read 	<span class="item">
+         <span class="subitem-3"><a href="javascript:void(0)">this important information</a>.</span>
+    </span></p>
+	
+     <div class="statusRollup-3" >
+			<p style="font-size: 12px;"> Before you consolidate, it’s important to find out if you’ll have to pay any exit fees or charges, if your tax and preservation component will be impacted or if you’ll lose any features and benefits that are important to you, on leaving your other super fund(s). 
+			<br><br>
+			Also, any insurance cover you have with your other super fund(s) will be cancelled, if you roll your money out and close your account(s) with your other super fund(s). It’s important to think about how this will impact your insurance needs before consolidating your super.
+			</p>
+      </div>
+
+	  <div class="row">
+        <div class="col-md-12 ">
+      		<div class="form-group" style="margin-bottom: 0;">
+				<div class="col-md-12 radio" style="padding-left: 0px;">
+				    <div class="btn-group" data-toggle="buttons">
+				        <label>
+				                  <input type="checkbox" id="searchConsent" name="quality[25]" value="searchConsent_checkbox" required/>
+				                  <span>&nbsp;I consent to the Trustee of iQ Super using my TFN to search for other super accounts I may have, now and in the future, using a facility provided by the ATO. </span>
+				        </label>
+				        <label>
+								   <input type="checkbox" id="consolidateConsent" name="quality[25]" value="consolidateConsent_checkbox" required/>
+								   &nbsp;I consent to the Trustee of iQ Super consolidating any super found through the above search into my iQ Super – Saver account.
+
+				        </label>
+				        <label>
+								   <input type="checkbox" id="consolidateConsent" name="quality[25]" value="consolidateConsent_checkbox" required/>
+								   &nbsp;I have read and understood <span class="item"><span class="subitem-3"><a href="javascript:void(0)">this important information</a>.</span></span>
+				        </label>
+				     </div>
+				              <!--btn group--> 
+				</div>
+			</div>
+        </div>
+
+
+<!--
+      <div class="row">
+        <div class="col-md-12 ">
+          <div class="form-group">
+            <div class="col-md-12">Here is where you can send us on a search to find your other super, including any lost or ATO-held super you may have.<br>
+              <br>
+              <input type="checkbox" id="searchConsent" value="searchConsent" required><label for="searchConsent">&nbsp;I consent to the Trustee of iQ Super to search for my other super accounts.</label><br>
+              <input type="checkbox" id="consolidateConsent" value="consolidateConsent" required><label for="consolidateConsent">&nbsp;I consent to the Trustee of iQ Super to consolidate all other superannuation accounts that are found</label><br>
+            </div>
+          </div> 
+        </div>
+-->
+        
+      </div>
+      <hr>
+      <h3>By clicking Submit, I declare that</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li>I have read and understood the <a href="https://russellinvestments.com/-/media/files/au/resources/pds/ss-pds-sf-riqs-v1ff-web-1612.pdf" target="_blank">iQ Super &ndash; Saver Product Disclosure Statement</a> (PDS).</li>
+            <li>I understand that iQ Super &ndash; Saver is an online only product and that communications will be sent electronically.</li>
+            <li>I have read and understood the <a href="https://russellinvestments.com/au/legal/trm-privacy-policy" target="_blank">Privacy Policy</a>, and consent to the use of my personal information as set out in this policy.</li>
+            <li>All information provided in this online form is true and correct.</li>
+            <li>I agree to be bound by the terms and conditions of iQ Super &ndash; Saver, including those in the PDS (or any subsequent replacement PDS), the Trust Deed (as amended from time to time) and the terms and conditions of any insurance policy in relation to iQ Super &ndash; Saver.</li>
+          </ul>
+          
+          <br>
+          <button type="submit" class="btn btn-standard" id="submit">Submit</button>
+          <br>
+          <br>
+          <br>
+          For more information or for any questions about iQ Super &ndash; Saver, please call us on 1800 555 667 (+61 2 9374 3916 for overseas) or email us at <a href="mailto:iq@russellinvestments.com.au">iq@russellinvestments.com.au</a><br>
+          <br>
+          <span class="disclaimer">
+          <p> IN PREPARING THIS FORM THE TRUSTEE HAS NOT TAKEN INTO ACCOUNT THE INVESTMENT OBJECTIVES, FINANCIAL SITUATION AND PARTICULAR NEEDS (FINANCIAL CIRCUMSTANCES) OF ANY PERSON. ACCORDINGLY, BEFORE MAKING A DECISION ABOUT THIS PRODUCT YOU SHOULD READ THE CURRENT PRODUCT DISCLOSURE STATEMENT AND SEEK ADVICE TAILORED TO YOUR OWN FINANCIAL CIRCUMSTANCES.TOTAL RISK MANAGEMENT PTY LIMITED ABN 62 008 644 353, AFSL NO. 238790, TRUSTEE OF THE RUSSELL INVESTMENTS MASTER TRUST ABN 89 384 753 567.<br>
+            <br>
+          </p>
+          </span> <br>
+          <hr>
+        </div>
+      </div>
+    </form>
+  </div>
+  <br>
+  <br>
+</div>
+<!--article--> 
+
+<script>
+
+//ToolTips
+	$.widget("ui.tooltip", $.ui.tooltip, {
+		options: {
+			content: function () {
+				return $(this).prop('title');
+			}
+		}
+	});
+	
+	$(function () {
+		$('.subitem').attr('title', $('.statusRollup').remove().html())
+		$(document).tooltip();
+	});
+	$(function () {
+		$('.subitem-2').attr('title', $('.statusRollup-2').remove().html())
+		$(document).tooltip();
+	});
+	$(function () {
+		$('.subitem-3').attr('title', $('.statusRollup-3').remove().html())
+		$(document).tooltip();
+	});
+
+	$("input.numeric").numeric()
+
+$(document).ready(function(e) {
+
+		//datepicker
+		$(function() {
+			$("#datepicker").datepicker({
+				changeMonth: true,
+			  	changeYear: true,
+			 	yearRange: "-100:+0",
+				dateFormat:"dd-mm-yy"
+			})			
+		});
+		  
+		
+		//bootstrap downdown
+		$( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
+			var $target = $( event.currentTarget );
+			$target.closest( '.btn-group' )
+			.find( '[data-bind="label"]' ).text( $target.text() )
+			.end()
+			.children( '.dropdown-toggle' ).dropdown( 'toggle' );
+			return false;
+			})
+  		
+		$(".dropdown-toggle").click(function(){
+			$(this).parent().parent().removeClass("has-error")
+		})
+		
+		$("#noInsurance").click(function(){
+			
+			$("#noInsuranceDetail").show();
+			$("#groupLifeInsuranceDetail").hide();
+			$("#transferInsuranceDetail").hide();
+		})
+		$("#groupLifeInsurance").click(function(){
+			$("#groupLifeInsuranceDetail").show();
+			$("#noInsuranceDetail").hide();
+			$("#transferInsuranceDetail").hide();
+		})
+		$("#transferInsurance").click(function(){
+			$("#transferInsuranceDetail").show();
+			$("#noInsuranceDetail").hide();
+			$("#groupLifeInsuranceDetail").hide();
+		})
+		
+		$("#registration-form").validator().on("submit",function(e){
+		  if (e.isDefaultPrevented()) {
+			if ($("#title span[data-bind=label]").html()==""){
+				$("#title").parent().parent().addClass("has-error");
+			}
+			if ($("#state span[data-bind=label]").html()==""){
+				$("#state").parent().parent().addClass("has-error");
+			}
+			if ($("#simple-allocation span[data-bind=label]").html()==""){
+				$("#simple-allocation").parent().parent().addClass("has-error");
+			}
+			if ($("#insurance span[data-bind=label]").html()==""){
+				$("#insurance").parent().parent().addClass("has-error");
+			}
+
+		  } else {
+			//INVALID
+			if ($("#title span[data-bind=label]").html()==""){
+				$("#title").parent().parent().addClass("has-error");
+				e.preventDefault()
+			}
+			if ($("#state span[data-bind=label]").html()==""){
+				$("#state").parent().parent().addClass("has-error");
+				e.preventDefault()
+			}
+		  }
+		})
+		
+		
+});
+</script>
+</body>
+</html>
