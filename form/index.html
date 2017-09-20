@@ -686,6 +686,9 @@ $(document).ready(function(e) {
 			if ($("#state span[data-bind=label]").html()==""){
 				$("#state").parent().parent().addClass("has-error");
 			}
+			if ($("#country span[data-bind=label]").html()==""){
+				$("#country").parent().parent().addClass("has-error");
+			}
 			if ($("#simple-allocation span[data-bind=label]").html()==""){
 				$("#simple-allocation").parent().parent().addClass("has-error");
 			}
@@ -701,6 +704,10 @@ $(document).ready(function(e) {
 			}
 			if ($("#state span[data-bind=label]").html()==""){
 				$("#state").parent().parent().addClass("has-error");
+				e.preventDefault()
+			}
+			if ($("#country span[data-bind=label]").html()==""){
+				$("#country").parent().parent().addClass("has-error");
 				e.preventDefault()
 			}
 		  }
